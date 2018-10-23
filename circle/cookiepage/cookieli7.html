@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS外接/nav-footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+        
+    <style>
+       
+
+        
+
+body{
+    margin: 0;
+}
+*{
+
+    box-sizing: border-box;
+}
+ 
+
+
+body {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.container {
+  max-width: 1170px;
+  float: none;
+  margin: 0 auto;
+}
+
+body:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* background-image: linear-gradient(to bottom right, rgba(29, 38, 113, 0.6), rgba(195, 55, 100, 0.6)); */
+  background-size: auto;
+  background-color: #BFD8D2;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Monoton', cursive;
+  font-size: 70px;
+  text-shadow: 2px 2px 10px #1D2671, 4px 4px 15px #C33764;
+}
+
+ul {
+  -webkit-perspective: 600;
+          perspective: 600;
+}
+
+li {
+  width: 200px;
+  height: 200px;
+  float: left;
+  list-style: none;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  cursor: pointer;
+  counter-increment: item;
+}
+li div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  transition: all .5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+}
+li:hover .front {
+  z-index: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+li:hover .back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.front {
+  z-index: 3;
+  color: #333;
+  line-height: 200px;
+  font-size: 80px;
+  font-family: 'Faster One', cursive;
+  /* background: #C33764;
+  background: linear-gradient(45deg, #1D2671 10%, #C33764 80%); */
+  width: 400px;
+    height: 250px;
+    /* position: relative; */
+    /* display: flex; */
+    justify-content: center;
+   
+}
+.row{
+    margin-left: 11%;
+    margin-right: -13%;
+
+}
+/* .front:after {
+  content: counter(item);
+} */
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 4%;
+    margin-left: 14%;
+}
+.col-lg-4{
+    /* margin: 0; */
+    padding-top: 7%;
+    padding-top: 7%;
+    padding-right: 34%;
+    padding-left: 2%;
+    margin-right: 14%;
+    margin-top: 2%;
+}
+.btn-group-vertical {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: center;
+    justify-content: center;
+    float: left;
+    padding-top: 11%;
+    width: 19%;
+    margin-left: -6%;
+}
+.pic1{
+    background-image: url('picture/00-參考資料/生日蛋糕/焦糖慕斯.jpg');
+    background-size: 400px 250px;
+}
+.pic2{
+    background-image: url('picture/00-參考資料/生日蛋糕/比利時巧克力.jpg');
+    background-size: 400px 250px;
+}
+.pic3{
+    background-image: url('picture/00-參考資料/生日蛋糕/百分比生乳蛋糕.jpg');
+    background-size: 400px 250px;
+}
+.pic4{
+    background-image: url('picture/00-參考資料/生日蛋糕/百分百優惠套餐.jpg');
+    background-size: 400px 250px;
+}
+.back {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        /* text-align: center; */
+        /* line-height: 100px; */
+       width: 400px;
+       height: 250px;
+       position: relative; 
+       /* display: flex; */
+       justify-content: center;
+       background-color: darksalmon;
+}
+.p{
+    text-align: center;
+    line-height: 100px;
+    font-size: 30pt;
+    font-weight:bolder;
+    padding-top: 8%;
+    margin: 0;
+    color: white;
+}
+.pp{
+    font-size: 18pt;
+    letter-spacing: 5px;
+    padding-left: 12%;
+    padding-right: 12%;
+    color: white;
+}
+.btn-group{
+    margin-top: 15%;
+}
+.btn{
+    padding-top: 8%;
+    color: #fff;
+    background-color: #df744a;
+    border-color: #df744a;
+}
+.btn:hover{
+    background-color: #df744a;
+    border-color:rgba(DF, 74, 4A, 0.3) ;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #df744a;
+    border-color: #df744a;
+}
+
+ @media screen and (max-width:1200px) {
+
+/*螢幕尺寸小於1200px時，套用以下css*/
+.box {
+    width: 100%;
+}
+}
+
+/*手機板的css*/
+@media screen and (max-width:900px) {
+
+/*螢幕尺寸小於500px時，套用以下css*/
+.navbar {
+    display: none;
+}
+.btn-group-vertical{
+    display: none;
+}
+.footer{
+    display: none;
+}
+
+ .row{
+    margin: 0;
+} 
+.mobile-nav-toggle {
+    display: block;
+}
+
+/*同時有這兩個class的時候*/
+.mobile-navbar.active {
+    display: block;
+}
+.col-md-12{
+    padding: 0;
+}
+.pic1{
+    max-width: 100%;
+    
+}
+.pic2{
+    width: 100%;
+    background-image: url('picture/00-參考資料/乳酪/乳酪條.jpg');
+}
+.pic3{
+    width: 100%;
+    background-image: url('picture/00-參考資料/幕斯/提拉米蘇.jpg');
+}
+.pic4{
+    width: 100%;
+    background-image: url('picture/00-參考資料/手工餅乾/蔥酥牛扎餅.jpg');
+}
+}
+
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a id="logo" href="/star3.html"></a>
+        <a id="navelement1" class="navelement" href="/程式碼/關於我們.html"> About Us</a>
+        <a id="navelement2" class="navelement" href="/程式碼/媒體寵兒.html">Report</a>
+        <a id="navelement3" class="navelement" href="/cookiepage/cookieli.html"> Products</a>
+        <a id="navelement4" class="navelement" href="/程式碼/menu/menu.html">Menu</a>
+        <a id="navelement5" class="navelement" href="/event/event1.html">Promotions</a>
+        <a id="navelement6" class="navelement" href="/contain/area2.html">Contact Us</a>
+    </nav>
+
+    <div class='container'>
+       
+
+        <div class="btn-group-vertical w50" role="group" aria-label="Basic example">
+            <a class="btn btn-secondary" href="cookieli.html" role="button">泡芙</a>
+            <a class="btn btn-secondary" href="cookieli1.html" role="button">瑞士捲  </a>
+            <a class="btn btn-secondary" href="cookieli2.html" role="button" >乳酪</a>
+            <a class="btn btn-secondary" href="cookieli3.html" role="button" >幕斯</a>
+            <a class="btn btn-secondary" href="cookieli4.html" role="button" >海綿</a>
+            <a class="btn btn-secondary" href="cookieli5.html" role="button" >手工餅乾</a>
+            <a class="btn btn-secondary" href="cookieli6.html" role="button" >長條蛋糕</a>
+            <a class="btn btn-secondary" href="cookieli7.html" role="button" >生日蛋糕</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <ul>
+                    <li class="col-lg-4 ">
+                        <div class='front'>
+                            <img class="pic1">
+
+                        </div>
+                        <div class='back'>
+                            <p class="p">焦糖慕斯  </p>
+                            <p class="pp">募斯體以焦糖奶油為主熬煮的工序體現老闆的用心</p>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 ">
+                        <div class='front'>
+                            <img class="pic2">
+                        </div>
+                        <div class='back'>
+                            <p class="p">比利時巧克力</p>
+                            <p class="pp"> 比力時進口巧克力加獨特夾心風味絕佳</p>
+                        </div>
+                    </li>
+                    <li class="col-lg-4">
+                        <div class='front'>
+                            <img class="pic3">
+                        </div>
+                        <div class='back'>
+                            <p class="p">百分比生乳蛋糕</p>
+                            <p class="pp">北海道進口生乳搭配黑巧克力甜而不膩</p>
+                        </div>
+                    </li>
+                    <li class="col-lg-4">
+                        <div class='front'>
+                            <img class="pic4">
+                        </div>
+                        <div class='back'>
+                            <p class="p">百分百優惠套餐</p>
+                            <p class="pp">百分比生乳蛋糕6吋+半熟乳酪18cm+貝多芬18cm</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button><img class="map" src="/element/map.png" alt=""></button>
+        <button><img class="separate" src="/element/separate.png" alt=""></button>
+        <button><img class="tel" src="/element/tel.png" alt=""></button>
+    </div>
+
+    
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        head.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        head.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
+    <script src="/JS外接/觸摸事件.jS"></script>
+</body>
+
+</html>
