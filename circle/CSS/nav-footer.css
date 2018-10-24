@@ -6,12 +6,12 @@
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items:flex-start;
     background-image: url('/element/lace02.png');
     background-size: contain;
