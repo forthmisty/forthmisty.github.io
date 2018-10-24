@@ -18,6 +18,14 @@
     .logo-cel{
         display: none
 	}
+	.menu-cel-element{
+			text-align: center;
+		}
+		.menu-pic-cel{
+			display: none;
+			width: 100%;
+			margin-top:35px
+		}
 	@media screen and (max-width:1300px) {
         .navbar {
             display: none
@@ -59,10 +67,9 @@
 		.dropdown{
 			display: none;	
 		}
-		.menu-cel-element{
-			display: none;
-			width: 100%
-		}
+		
+	}
+		
 		@media screen and (max-width:1000px) {
 			.background{
 				display: none
@@ -83,13 +90,13 @@
 				display: block;
 				background-color:80%#EFEFEF
 			}
-			.menu-cel-element{
-				display: block;
-				text-align: center;
+			
+			.menu-pic-cel{
+				display: block
 			}
 			
 		}
-    }
+    
 </style>
 </head>
 
@@ -110,12 +117,12 @@
 		</div>
 	</div>
 
-	<div style="margin-top:35px" class="menu-pic-cel">
+	<div class="menu-pic-cel">
 		<div class="menu-cel-element"><img width="80%" src="element/menu-1.jpg" alt=""></div>
 		<div class="menu-cel-element"><img width="80%" src="element/menu-2.jpg" alt=""></div>
 		<div class="menu-cel-element"><img width="80%" src="element/menu-3.jpg" alt=""></div>
 	</div>
-	
+
 	</div>
 
 	<nav class="navbar">
@@ -137,7 +144,7 @@
 	</div>
 	<div class="footer">
 		<button><img class="map" src="element/map.png" alt=""></button>
-		<button><img class="separate" src="element/map.png" alt=""></button>
+		<button><img class="separate" src="element/separate.png" alt=""></button>
 		<button><img class="tel" src="element/tel.png" alt=""></button>
 	</div>
 
@@ -149,7 +156,7 @@
 
 		var banner = new FragmentBanner({
 			container: "#banner1",//选择容器 必选
-			imgs: ['/element/menu-1.jpg', '/element/menu-2.jpg', '/element/menu-3.jpg'],//图片集合 必选
+			imgs: ['element/menu-1.jpg', 'element/menu-2.jpg', 'element/menu-3.jpg'],//图片集合 必选
 			size: {
 				width: 1000,
 				height: 560
