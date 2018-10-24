@@ -36,7 +36,7 @@
             top: 10%;
             background-image: url('picture/bg/bg/bg7.jpg');
             /* height: 2000px; */
-             background-size: 100% calc(40%-60px);
+            background-size: 100% calc(40%-60px);
             /* background-repeat: no-repeat;
             background-position: center; */
             background-size: 100% 100%;
@@ -109,9 +109,11 @@
             background-image: url('picture/circleback/about.jpg');
             background-size: 280px 280px;
         }
+
         .box1:hover p {
             color: transparent
         }
+
         .box2 {
             width: 280px;
             height: 280px;
@@ -124,9 +126,11 @@
             background-image: url('picture/circleback/repoter.jpg');
             background-size: 280px 280px;
         }
+
         .box2:hover p {
             color: transparent
         }
+
         .box3 {
             width: 280px;
             height: 280px;
@@ -139,9 +143,11 @@
             background-image: url('picture/circleback/cookie.jpg');
             background-size: 280px 280px;
         }
+
         .box3:hover p {
             color: transparent
         }
+
         .box4 {
             width: 280px;
             height: 280px;
@@ -154,9 +160,11 @@
             background-image: url('picture/circleback/menu.jpg');
             background-size: 280px 280px;
         }
+
         .box4:hover p {
             color: transparent
         }
+
         .box5 {
             width: 280px;
             height: 280px;
@@ -169,26 +177,30 @@
             background-image: url('picture/circleback/event.jpg');
             background-size: 280px 280px;
         }
+
         .box5:hover p {
             color: transparent
         }
+
         .box6 {
             width: 280px;
             height: 280px;
             border-radius: 100%;
             background-color: #df744a;
-            
+
         }
 
         .box6:hover {
             background-color: rgba(0, 0, 0, 0.1);
             background-image: url('picture/circleback/contain.jpg');
             background-size: 280px 280px;
-           
+
         }
+
         .box6:hover p {
             color: transparent
         }
+
         .img {
             border-radius: 100%;
             overflow: hidden;
@@ -226,6 +238,24 @@
             font-size: 30pt;
             color: white;
             font-family: "AdobeFanHeitiStd-Bold";
+        }
+        .logo-cel{
+            display: none;
+            width: 100%;
+            text-align: center;
+        }
+        .box {
+            display: none;
+            width: 100%;
+            
+            
+        }
+        .box button{
+            background-color: orange;
+            font-size: 30px;
+            max-height: 600px;
+            margin: 30px;
+            padding: 80px 0
         }
 
 
@@ -282,6 +312,8 @@
             margin-left: -22%;
         }
 
+        
+
         @keyframes circle {
             0% {
                 transform: rotate(0deg) translate(-140px) rotate(0deg);
@@ -293,12 +325,39 @@
             }
         }
 
-        .copy{
+        .copy {
             display: flex;
             justify-content: center;
             color: #000;
             font-size: 12pt;
-            padding:59px;;
+            padding: 59px;
+            ;
+        }
+
+        @media screen and (max-width:1250px) {
+
+            .row {
+                display: none;
+            }
+
+            .bg {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .box {
+                display: block;
+                display: flex;
+                justify-content: center
+   
+            }
+            .logo-cel{
+                display: block;
+            }
+            body{
+                background-color: #BFD8D2
+            }
         }
     </style>
 </head>
@@ -319,7 +378,9 @@
                                 <div class="img">
                                     <a href="about-us.html" style="text-decoration:none" ; onmouseover="mouseOver()"
                                         onmouseout="mouseOut()">
-                                        <div><p>關於我們</p></div>
+                                        <div>
+                                            <p>關於我們</p>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -332,7 +393,9 @@
                                 <div class="img">
                                     <a href="news.html" style="text-decoration:none" ; onmouseover="mouseOver()"
                                         onmouseout="mouseOut()">
-                                        <div><p>報導</p></div>
+                                        <div>
+                                            <p>報導</p>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -345,7 +408,9 @@
                                 <div class="img">
                                     <a href="cookieli.html" style="text-decoration:none" ; onmouseover="mouseOver()"
                                         onmouseout="mouseOut()">
-                                        <div><p>精緻甜點</p></div>
+                                        <div>
+                                            <p>精緻甜點</p>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -362,7 +427,9 @@
                                 <div class="img">
                                     <a href="menu.html" style="text-decoration:none" ; onmouseover="mouseOver()"
                                         onmouseout="mouseOut()">
-                                        <div><p>菜單</p></div>
+                                        <div>
+                                            <p>菜單</p>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -375,7 +442,9 @@
                                 <div class="img">
                                     <a href="event1.html" style="text-decoration:none" ; onmouseover="mouseOver()"
                                         onmouseout="mouseOut()">
-                                        <div><p>優惠活動</p></div>
+                                        <div>
+                                            <p>優惠活動</p>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -386,8 +455,10 @@
                         <div class="main">
                             <div class="box6">
                                 <div class="img">
-                                    <a href="area2.html" style="text-decoration:none" >
-                                        <div><p>連絡我們</p></div>
+                                    <a href="area2.html" style="text-decoration:none">
+                                        <div>
+                                            <p>連絡我們</p>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -403,7 +474,20 @@
         </div>
         <p class="copy">Copyright © 2018</p>
     </div>
-    
+    <div class="logo-cel"><img width="32%" src="element/logo.png" alt=""></div>
+    <div style="border-top:2px solid white" class="box">
+        <button style="width:30%;"><a href="about-us.html">關於我們</a></button>
+        <button style="width:30%;"><a href="news.html">報導</a></button>
+    </div>
+    <div class="box">
+        <button style="width:30%;"><a href="cookieli.html">精緻甜點</a></button>
+        <button style="width:30%;"><a href="menu.html">菜單</a></button>
+    </div>
+    <div  class="box">
+        <button style="width:30%;"><a href="event1.html">優惠活動</a></button>
+        <button style="width:30%;"><a href="area2.html">聯絡我們</a></button>
+    </div>
+    <div style="background-color:white; height: 20px;text-align: center" class="web-bottom">Copyright © 2018</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
