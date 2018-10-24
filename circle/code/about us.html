@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>關於我們</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS contact/nav-footer.css">
+
+</head>
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0
+    }
+
+    
+
+    
+    #conversation{
+        position: absolute;
+        top:7%;
+        left:21%;
+        transition: 3s   
+    }
+    #conversation:hover{
+        top: 5%;
+        left: 19%;
+    }
+    #cat{
+        position: absolute;
+        bottom: 11%;
+        right: 23%;
+    }
+    .dropdown{
+        display: none;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+    .logo-cel{
+        display: none;
+        width: 100%
+        
+    }
+    .logo-cel img{
+        width: 32%;
+        
+    }
+    #cel-pic{
+        display: none;
+        
+    }
+    #cel-pic img{
+        width: 50%
+    }
+    .story-title{
+        display: none;
+        text-align: center;
+        font-size: 40px;
+        color: #3D76A2
+    }
+    .story{
+        display: none;
+        text-align: center;
+        font-size: 25px;
+        color: #3D76A2
+    }
+    
+    
+    @media screen and (max-width:1000px){
+        .navbar{
+            display: none;
+        }
+        .footer{
+            display: none
+        }
+        .dropdown{
+            display: block;
+        }
+        .logo-cel{
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #EFEFEF;
+        }
+        
+        #cel-pic{
+            display: block;
+            margin-top: 20px
+        }
+        #cel-pic img{
+            display: block;
+        margin: 0 auto
+            
+        }
+       
+       
+        .story-title{
+            display: block;
+        }
+        .story{
+            display: block;
+        }
+        
+        
+
+    }
+    @media screen and (max-width:1300px){
+        #conversation{
+            display: none
+        }
+        #cat{
+            display: none
+        }
+        .background{
+            display: none
+        }
+    }
+</style>
+
+<body>
+
+    <div class="background"></div>
+    <div class="logo-cel"><img src="/element/logo.png" alt=""></div>
+    <div id="cel-pic"><img class="cell-pic" src="/element/cel-shop.jpg" alt=""></div>
+    <div class="story-title">品牌故事</div>
+    <div style="margin-top:45px" class="story">前往九份老街及金瓜石黃金博物館的路途上，</div>
+    <div class="story">過了瑞芳市區走往明燈路，</div>
+    <div class="story">左手邊出現一棟一樓有著藍白風格的獨棟建築物，</div>
+    <div class="story">Misty『米詩堤甜點王國』。</div>
+    <div class="story">感動的甜點，也在這一刻燃起。</div>
+
+    <div class="story">店名米詩堤是取英文「misty」譯音，</div>
+    <div class="story">點出了九份因有霧點綴，讓其有朦朧山城之美的意境，</div>
+    <div class="story">而 LOGO是以 Ｍ 的造形延伸為蝴蝶，</div>
+    <div class="story">蝴蝶逐蜜作為致力做出「味自慢」甜點的象徵。</div>
+
+    　　<div class="story">三位年輕人，為了實現夢想，找尋屬於自己的甜點王國，２００７年５月至瑞芳九份山下，</div>
+    <div class="story">建造具有生命力的甜點屋，</div>
+    <div class="story">甜點給予人們的感覺是幸福且甜蜜，</div>
+    <div class="story">而給予於米詩堤的價值確是夢想及生命，堅持最好的，</div>
+    <div class="story">是三位共同不變的信念。</div>
+
+    <div class="story">米詩堤除了本身專業技術外，</div>
+    <div class="story">不惜成本，堅持用進口頂級原物料，</div>
+    <div class="story">並遠赴法國與日本研習甜點技術，</div>
+    <div class="story">開發出許多膾炙人口的美味甜點，</div>
+    <div class="story">也因此廣受媒體、報章雜誌、網路報導及流串，</div>
+    <div class="story">成為至九份必買的甜點店之一…</div>
+    <nav class="navbar">
+        <a id="logo" href="/star3.html"></a>
+        <a id="navelement1" class="navelement" href="/code/about us.html"> About Us</a>
+        <a id="navelement2" class="navelement" href="/code/news.html">Report</a>
+        <a id="navelement3" class="navelement" href="/cookiepage/cookieli.html"> Products</a>
+        <a id="navelement4" class="navelement" href="/code/menu/menu.html">Menu</a>
+        <a id="navelement5" class="navelement" href="/event/event1.html">Promotions</a>
+        <a id="navelement6" class="navelement" href="/contain/area2.html">Contact Us</a>
+    </nav>
+    <div class="dropdown">
+            <button class="btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">關於我們</a>
+                <a class="dropdown-item" href="#">食材</a>
+                <a class="dropdown-item" href="#">產品介紹</a>
+                <a class="dropdown-item" href="#">菜單</a>
+                <a class="dropdown-item" href="#">優惠活動</a>
+            </div>
+        </div>
+
+    <div id="conversation"><img height="725px" src="/element/conversation.png" alt="725"></div>
+    <div id="cat"><img height="164px" src="/element/Cat.png" alt="164"></div>
+
+    <div class="footer">
+        <button><img class="map" src="/element/map.png" alt=""></button>
+        <button><img class="separate" src="/element/separate.png" alt=""></button>
+        <button><img class="tel" src="/element/tel.png" alt=""></button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="/JS contact/JS.jS"></script>
+
+</body>
+
+</html>

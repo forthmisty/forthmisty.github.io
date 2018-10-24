@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS外接/nav-footer.css">
+    <link rel="stylesheet" href="/CSS contact/nav-footer.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <style>
@@ -20,7 +20,16 @@ body{
     box-sizing: border-box;
 }
  
-
+.navbar{
+    position: relative;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    -ms-flex-pack: justify;
+    padding: .5rem 1rem;
+    justify-content: space-evenly;
+}
 
 body {
   width: 100%;
@@ -162,6 +171,35 @@ li:hover .back {
     background-image: url('picture/00-參考資料/泡芙/黃金泡芙.jpg');
     background-size: 400px 250px;
 }
+.pic5head{
+    display: none;
+}
+.pic6head{
+    display: none;
+}
+.pic7head{
+    display: none;
+}
+.pic8head{
+    display: none;
+}
+.pic5back{
+    display: none;
+}
+.pic6back{
+    display: none;
+}
+
+.pic7back{
+    display: none;
+}
+.pic8back{
+    display: none;
+}
+.ppp{
+    display: none;
+
+}
 .back {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
@@ -169,7 +207,7 @@ li:hover .back {
         /* line-height: 100px; */
        width: 400px;
        height: 250px;
-       position: relative; 
+       /* position: relative;  */
        /* display: flex; */
        justify-content: center;
        background-color: darksalmon;
@@ -189,6 +227,30 @@ li:hover .back {
     padding-left: 12%;
     padding-right: 12%;
     color: white;
+}
+.back1{
+    display: none;
+}
+.back2{
+    display: none;
+}
+.back3{
+    display: none;
+}
+.back4{
+    display: none;
+}
+.back5{
+    display: none;
+}
+.back6{
+    display: none;
+}
+.back7{
+    display: none;
+}
+.back8{
+    display: none;
 }
 .btn-group{
     margin-top: 15%;
@@ -220,7 +282,7 @@ li:hover .back {
 /*手機板的css*/
 @media screen and (max-width:900px) {
 
-/*螢幕尺寸小於500px時，套用以下css*/
+/*螢幕尺寸小於900px時，套用以下css*/
 .navbar {
     display: none;
 }
@@ -245,14 +307,70 @@ li:hover .back {
 .col-md-12{
     padding: 0;
 }
+
 .pic1{
     max-width: 100%;
     
 }
+.back{
+    display: none;
+}
+.back1{
+    display: block;
+    width: 400px;
+    height: 250px;
+}
+.back2{
+    display: block;
+    width: 400px;
+    height: 250px;
+   
+}
+.back3{
+    display: block;
+    width: 400px;
+    height: 250px;
+   
+}
+.back4{
+    display: block;
+    width: 400px;
+    height: 250px;
+   
+}
+.back5{
+    display: block;
+    width: 400px;
+    height: 250px;
+   
+}
+.back6{
+    display: block;
+    width: 400px;
+    height: 250px;
+   
+}
+.back7{
+    display: block;
+    width: 400px;
+    height: 250px;
+   
+}
+.back8{
+    display: block;
+    width: 400px;
+    height: 250px;
+   
+}
+.back2 p{
+
+}
 .pic2{
     width: 100%;
     background-image: url('picture/00-參考資料/乳酪/乳酪條.jpg');
+    
 }
+
 .pic3{
     width: 100%;
     background-image: url('picture/00-參考資料/幕斯/提拉米蘇.jpg');
@@ -260,6 +378,45 @@ li:hover .back {
 .pic4{
     width: 100%;
     background-image: url('picture/00-參考資料/手工餅乾/蔥酥牛扎餅.jpg');
+}
+
+.pic5head{
+    display: block;
+    background-size: 400px 250px;
+    background-repeat: no-repeat;
+    background-image: url('picture/00-參考資料/海綿/公主的嫁衣.jpg');
+}
+.pic6head{
+    display: block;
+    background-size: 400px 250px;
+    background-repeat: no-repeat;
+    background-image: url('picture/00-參考資料/長條蛋糕/黑磚.jpg');
+}
+.pic7head{
+    display: block;
+    background-size: 400px 250px;
+    background-repeat: no-repeat;
+    background-image: url('picture/00-參考資料/瑞士捲/九份芋捲.jpg');
+}
+.pic8head{
+    display: block;
+    background-size: 400px 250px;
+    background-repeat: no-repeat;
+    background-image: url('picture/00-參考資料/生日蛋糕/比利時巧克力.jpg');
+}
+.ppp{
+    display: block;
+    margin-left: 19%;
+    margin-top: -6%;
+}
+.ppp pp{
+
+}
+.font{
+
+}
+.back{
+
 }
 }
 
@@ -270,12 +427,12 @@ li:hover .back {
 
     <nav class="navbar">
         <a id="logo" href="/star3.html"></a>
-        <a id="navelement1" class="navelement" href="/程式碼/關於我們.html"> About Us</a>
-        <a id="navelement2" class="navelement" href="/程式碼/媒體寵兒.html">Report</a>
-        <a id="navelement3" class="navelement" href="/cookiepage/cookieli.html"> Products</a>
-        <a id="navelement4" class="navelement" href="/程式碼/menu/menu.html">Menu</a>
-        <a id="navelement5" class="navelement" href="/event/event1.html">Promotions</a>
-        <a id="navelement6" class="navelement" href="/contain/area2.html">Contact Us</a>
+        <a id="navelement1" class="navelement" href="code/about us.html"> About Us</a>
+        <a id="navelement2" class="navelement" href="code/news.html">Report</a>
+        <a id="navelement3" class="navelement" href="cookiepage/cookieli.html"> Products</a>
+        <a id="navelement4" class="navelement" href="code/menu/menu.html">Menu</a>
+        <a id="navelement5" class="navelement" href="event/event1.html">Promotions</a>
+        <a id="navelement6" class="navelement" href="contain/area2.html">Contact Us</a>
     </nav>
 
     <div class='container'>
@@ -299,10 +456,13 @@ li:hover .back {
                 <ul>
                     <li class="col-lg-4 ">
                         <div class='front'>
-                            <img class="pic1">
-
+                            <img class="pic1">   
                         </div>
                         <div class='back'>
+                            <p class="p">巧克力泡芙</p>
+                            <p class="pp">香甜巧克力餡加脆皮口感滿分</p>
+                        </div>
+                        <div class='back1'>
                             <p class="p">巧克力泡芙</p>
                             <p class="pp">香甜巧克力餡加脆皮口感滿分</p>
                         </div>
@@ -315,6 +475,10 @@ li:hover .back {
                             <p class="p">生乳泡芙</p>
                             <p class="pp">新鮮機蛋加進口麵粉吃出綿密的口感</p>
                         </div>
+                        <div class='back2'>
+                            <p class="p">乳酪條</p>
+                            <p class="pp">香脆餅乾櫬底搭配乳酪香氣相得益彰</p>
+                        </div>
                     </li>
                     <li class="col-lg-4">
                         <div class='front'>
@@ -324,6 +488,10 @@ li:hover .back {
                             <p class="p">芋頭泡芙</p>
                             <p class="pp">來自大甲的芋頭餡吃出滿滿的幸福感</p>
                         </div>
+                        <div class='back3'>
+                            <p class="p">提拉米蘇</p>
+                            <p class="pp">馬斯卡彭起司及手指餅乾絕妙搭配口感滿分</p>
+                        </div>
                     </li>
                     <li class="col-lg-4">
                         <div class='front'>
@@ -332,6 +500,62 @@ li:hover .back {
                         <div class='back'>
                             <p class="p">黃金泡芙</p>
                             <p class="pp">養生的地瓜餡泥吃出健康又滿足味蕾</p>
+                        </div>
+                        <div class='back4'>
+                            <p class="p">蔥酥牛軋餅</p>
+                            <p class="pp">採用日本頂級原料純手工新鮮製成口感絕佳美味</p>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 ">
+                        <div class='front pic5head'>
+                            <img class="pic5">
+                        </div>
+                        <div class='back pic5back'>
+                            <p class="p"></p>
+                            <p class="pp"></p>
+                        </div>
+                        <div class='back5'>
+                            <p class="p">公主的嫁衣</p>
+                            <p class="pp">獨特檸檬蛋糕微微酸甜非常有內涵的甜點</p>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 ">
+                        <div class='front pic6head'>
+                            <img class="pic6">
+                        </div>
+                        <div class='back pic6back'>
+                            <p class="p"></p>
+                            <p class="pp"></p>
+                        </div>
+                        <div class='back6'>
+                            <p class="p">黑磚</p>
+                            <p class="pp">三層夾心蛋糕香氣濃郁層次交疊口感絲絲入扣</p>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 ">
+                        <div class='front pic7head'>
+                            <img class="pic7">
+                        </div>
+                        <div class='back pic7back'>
+                            <p class="p"></p>
+                            <p class="pp"></p>
+                        </div>
+                        <div class='back7'>
+                            <p class="p">九份芋捲</p>
+                            <p class="pp">紮實的芋泥內餡搭配輕盈的蛋糕體美味加倍</p>
+                        </div>
+                    </li>
+                    <li class="col-lg-4 ">
+                        <div class='front pic8head'>
+                            <img class="pic8">
+                        </div>
+                        <div class='back pic8back'>
+                            <p class="p"></p>
+                            <p class="pp"></p>
+                        </div>
+                        <div class='back8'>
+                            <p class="p">比利時巧克力</p>
+                            <p class="pp">比力時進口巧克力加獨特夾心風味絕佳</p>
                         </div>
                     </li>
                 </ul>
@@ -395,7 +619,7 @@ li:hover .back {
         }
 	// ]]>
     </script>
-    <script src="/JS外接/觸摸事件.jS"></script>
+<script src="/JS contact/JS.jS"></script>
 </body>
 
 </html>

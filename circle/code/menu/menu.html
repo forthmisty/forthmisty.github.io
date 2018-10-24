@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/banner.css">
+	<title>menu</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="/CSS contact/nav-footer.css">
+	<style>
+
+		.dropdown{
+        display: none
+    }
+    .logo-cel{
+        display: none
+	}
+	@media screen and (max-width:1300px) {
+        .navbar {
+            display: none
+        }
+
+        #conversation {
+            display: none;
+        }
+
+        #cat {
+            display: none;
+        }
+        .dropdown{
+            display: block;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+        .footer{
+            display: none
+        }
+        .logo-cel{
+			display: none;
+			width: 100%;
+			text-align: center;
+		}
+		.logo-cel img{
+			width: 32%
+		}
+        
+        body{
+           
+            border-left: 1px solid orange;
+            border-right: 1px solid orange;  
+		}
+		.container{
+			display: none
+		}
+		.dropdown{
+			display: none;	
+		}
+		.menu-cel-element{
+			display: none;
+			width: 100%
+		}
+		@media screen and (max-width:1000px) {
+			.background{
+				display: none
+			}
+			.navbar{
+				display: none;
+			}
+			.footer{
+				display: none;
+			}
+			.dropdown{
+				display: block;
+				position: fixed;
+				top: 10px;
+				left: 10px;
+			}
+			.logo-cel{
+				display: block;
+				background-color:80%#EFEFEF
+			}
+			.menu-cel-element{
+				display: block;
+				text-align: center;
+			}
+			
+		}
+    }
+</style>
+</head>
+
+<body>
+	<div class="background"></div>
+	<div class="logo-cel"><img width="100%" src="/element/logo.png" alt=""></div>
+	<div class="dropdown">
+		<button class="btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+		 aria-expanded="false">
+			<i class="fas fa-bars"></i>
+		</button>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item" href="#">關於我們</a>
+			<a class="dropdown-item" href="#">食材</a>
+			<a class="dropdown-item" href="#">產品介紹</a>
+			<a class="dropdown-item" href="#">菜單</a>
+			<a class="dropdown-item" href="#">優惠活動</a>
+		</div>
+	</div>
+
+	<div style="margin-top:35px" class="menu-pic-cel">
+		<div class="menu-cel-element"><img width="80%" src="/element/menu-1.jpg" alt=""></div>
+		<div class="menu-cel-element"><img width="80%" src="/element/menu-2.jpg" alt=""></div>
+		<div class="menu-cel-element"><img width="80%" src="/element/menu-3.jpg" alt=""></div>
+	</div>
+	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		<a class="dropdown-item" href="/程式碼/關於我們.html">關於我們</a>
+		<a class="dropdown-item" href="/程式碼/媒體寵兒.html">新訊</a>
+		<a class="dropdown-item" href="#">產品介紹</a>
+		<a class="dropdown-item" href="/程式碼/menu/menu.html">菜單</a>
+		<a class="dropdown-item" href="/event/event1.html">優惠活動</a>
+	</div>
+	</div>
+
+	<nav class="navbar">
+		<a id="logo" href="/star3.html"></a>
+		<a id="navelement1" class="navelement" href="/code/about us.html"> About Us</a>
+		<a id="navelement2" class="navelement" href="/code/news.html">Report</a>
+		<a id="navelement3" class="navelement" href="/cookiepage/cookieli.html"> Products</a>
+		<a id="navelement4" class="navelement" href="/code/menu/menu.html">Menu</a>
+		<a id="navelement5" class="navelement" href="/event/event1.html">Promotions</a>
+		<a id="navelement6" class="navelement" href="/contain/area2.html">Contact Us</a>
+	</nav>
+	<div class="container">
+		<div class="banner" id="banner1" style="margin: 50px auto;">
+			<div class="banner-view"></div>
+			<div class="banner-btn"></div>
+			<div class="banner-number"></div>
+			<div class="banner-progres"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<button><img class="map" src="/element/map.png" alt=""></button>
+		<button><img class="separate" src="/element/separate.png" alt=""></button>
+		<button><img class="tel" src="/element/tel.png" alt=""></button>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="js/banner.js"></script>
+	<script type="text/javascript">
+
+		var banner = new FragmentBanner({
+			container: "#banner1",//选择容器 必选
+			imgs: ['/element/menu-1.jpg', '/element/menu-2.jpg', '/element/menu-3.jpg'],//图片集合 必选
+			size: {
+				width: 1000,
+				height: 560
+			},//容器的大小 可选
+			//行数与列数 可选
+			grid: {
+				line: 12,
+				list: 14
+			},
+			index: 0,//图片集合的索引位置 可选
+			type: 1,//切换类型 1 ， 2 可选
+			boxTime: 5000,//小方块来回运动的时长 可选
+			fnTime: 10000//banner切换的时长 可选
+		});
+
+
+
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
+	<script src="/JS contact/JS.jS"></script>
+</body>
+
+</html>
