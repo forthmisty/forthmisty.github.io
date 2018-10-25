@@ -11,7 +11,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
-<style>
+    <style>
         * {
             box-sizing: border-box;
         }
@@ -34,6 +34,7 @@
         
         .dropdown{
             display: none;
+            z-index: 999;
         }
         @media screen and (max-width:1200px) {
 
@@ -67,7 +68,12 @@
         .container{
             padding-top: 35%;
         }
-    }
+        
+            body{
+                background-color:white
+            }
+        }
+    
 
 </style>
 
@@ -96,11 +102,12 @@
             <a class="dropdown-item" href="cookieli.html">產品介紹</a>
             <a class="dropdown-item" href="menu.html">菜單</a>
             <a class="dropdown-item" href="event1.html">優惠活動</a>
+            <a class="dropdown-item" href="area2.html">聯絡資訊</a>
         </div>
     </div>
     <div class='container'>
 
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="300" >
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="1500">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -141,7 +148,7 @@
         <button><img class="tel" src="element/tel.png" alt=""></button>
     </div>
 
-    
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -150,7 +157,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-        <script src="JS/JS.jS"></script>
+    <script src="JS/JS.jS"></script>
 
 </body>
 
